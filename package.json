@@ -1,0 +1,34 @@
+{
+  "name": "utils-js",
+  "version": "1.0.0",
+  "description": "javascript (typescript) utils",
+  "main": "./dist/index.js",
+  "sideEffects": false,
+  "exports": {
+    "./addStringToFilenameBeforeExtension": "./dist/addStringToFilenameBeforeExtension.js",
+    "./getFileExtension": "./dist/getFileExtension.js",
+    "./shortenFileName": "./dist/shortenFileName.js",
+    "./newLine": "./dist/newLine.js",
+    "./nbsp": "./dist/nbsp.js",
+    "./formatUnixTimeToDateMoscowTime": "./dist/formatUnixTimeToDateMoscowTime.js",
+    "./formatFileSizeText": "./dist/formatFileSizeText.js",
+    "./isEmailValid": "./dist/isEmailValid.js",
+    "./isPhoneNumberValid": "./dist/isPhoneNumberValid.js",
+    "./replaceSpacesWithNbsp": "./dist/replaceSpacesWithNbsp.js",
+    "./sleep": "./dist/sleep.js",
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "vkoshcheev",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
+  }
+}
